@@ -1,0 +1,5 @@
+C:\Users\Дмитрий\source\repos\TCP_Common_Entities\bin\Debug\TCP_Common_Entities.dll
+C:\Users\Дмитрий\source\repos\TCP_Common_Entities\bin\Debug\TCP_Common_Entities.pdb
+C:\Users\Дмитрий\source\repos\TCP_Common_Entities\obj\Debug\TCP_Common_Entities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\TCP_Common_Entities\obj\Debug\TCP_Common_Entities.dll
+C:\Users\Дмитрий\source\repos\TCP_Common_Entities\obj\Debug\TCP_Common_Entities.pdb

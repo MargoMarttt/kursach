@@ -1,0 +1,11 @@
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\DatabaseEntities\obj\Debug\DatabaseEntities.pdb

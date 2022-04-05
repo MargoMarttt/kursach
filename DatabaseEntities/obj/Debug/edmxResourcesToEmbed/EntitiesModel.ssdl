@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntitiesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EntitiesModelStoreContainer">
+    <EntitySet Name="DetailSet" EntityType="EntitiesModel.Store.DetailSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SupplierSet" EntityType="EntitiesModel.Store.SupplierSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RateSet" EntityType="EntitiesModel.Store.RateSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientSet" EntityType="EntitiesModel.Store.ClientSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdminSet" EntityType="EntitiesModel.Store.AdminSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExpertSet" EntityType="EntitiesModel.Store.ExpertSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="DetailSupplier" Association="EntitiesModel.Store.DetailSupplier">
+      <End Role="Detail" EntitySet="DetailSet" />
+      <End Role="Supplier" EntitySet="SupplierSet" />
+    </AssociationSet>
+    <AssociationSet Name="DetailRate" Association="EntitiesModel.Store.DetailRate">
+      <End Role="Detail" EntitySet="DetailSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+    <AssociationSet Name="ExpertRate" Association="EntitiesModel.Store.ExpertRate">
+      <End Role="Expert" EntitySet="ExpertSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DetailSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
+    <Property Name="Supplier_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SupplierSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RateSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TimeOfCommit" Type="datetime" Nullable="false" />
+    <Property Name="DetailId" Type="int" Nullable="false" />
+    <Property Name="ExpertId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpertSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+    <Property Name="RateWeight" Type="float" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="DetailSupplier">
+    <End Role="Detail" Type="EntitiesModel.Store.DetailSet" Multiplicity="*" />
+    <End Role="Supplier" Type="EntitiesModel.Store.SupplierSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Detail">
+        <PropertyRef Name="Supplier_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DetailRate">
+    <End Role="Detail" Type="EntitiesModel.Store.DetailSet" Multiplicity="1" />
+    <End Role="Rate" Type="EntitiesModel.Store.RateSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Detail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="DetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ExpertRate">
+    <End Role="Expert" Type="EntitiesModel.Store.ExpertSet" Multiplicity="1" />
+    <End Role="Rate" Type="EntitiesModel.Store.RateSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expert">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="ExpertId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
