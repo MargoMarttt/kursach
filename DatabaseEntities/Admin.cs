@@ -11,20 +11,50 @@ namespace DatabaseEntities
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class Admin
+    using System.Configuration;
+    using System.Drawing;
+    using System.IO;
+    using System.Runtime.Serialization.Formatters.Binary;
+
+    [Serializable]
+    public partial class Admin : IEquatable<Admin>
     {
         public int Id { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public System.DateTime LastOnline { get; set; }
-        public Status UserStatus { get; set; }
-        public bool IsOnline { get; set; }
 
-        public Admin(string login, string password)
+        public string Login { get; set; }
+
+        public string Password { get; set; }
+
+        public Status UserStatus { get; set; }
+
+        public DateTime LastOnline { get; set; }
+
+        private bool _isOnline;
+
+        public bool IsOnline
+        {
+            get { return _isOnline; }
+            set { LastOnline = DateTime.Now; _isOnline = value; }
+        }
+
+
+        public Admin()
+        {
+            Login = "empty";
+            Password = "empty";
+            UserStatus = Status.NotBanned;
+            IsOnline = false;
+        }
+
+        public Admin (string login, string password) : this()
         {
             Login = login;
             Password = password;
+        }
+
+        public bool Equals(Admin other)
+        {
+            return Login == other.Login && Password == other.Password;
         }
     }
 }

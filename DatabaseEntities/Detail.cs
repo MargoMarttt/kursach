@@ -14,19 +14,11 @@ namespace DatabaseEntities
     
     public partial class Detail
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Detail()
-        {
-            this.Rate = new HashSet<Rate>();
-        }
-    
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Cost { get; set; }
-        public double TotalRate { get; set; }
+        public double VendorCode { get; set; }
+        public int DetailSupplierId { get; set; }
     
-        public virtual Supplier Supplier { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Rate> Rate { get; set; }
+        public virtual DetailSupplier DetailSupplier { get; set; }
     }
 }

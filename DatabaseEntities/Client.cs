@@ -11,21 +11,51 @@ namespace DatabaseEntities
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class Client
+    using System.Configuration;
+    using System.Drawing;
+    using System.IO;
+    using System.Runtime.Serialization.Formatters.Binary;
+
+    [Serializable]
+    public partial class Client : IEquatable<Client>
     {
         public int Id { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public System.DateTime LastOnline { get; set; }
-        public Status UserStatus { get; set; }
-        public bool IsOnline { get; set; }
 
-        public Client(string login, string password)
+        public string Login { get; set; }
+
+        public string Password { get; set; }
+
+        public Status UserStatus { get; set; }
+
+        public DateTime LastOnline { get; set; }
+
+        private bool _isOnline;
+
+        public bool IsOnline
         {
-            Login = login;
-            Password = password;
+            get { return _isOnline; }
+            set { LastOnline = DateTime.Now; _isOnline = value; }
         }
 
+        public Client()
+        {
+            Id = 0;
+            Login = "empty";
+            Password = "empty";
+            UserStatus = Status.NotBanned;
+            IsOnline = false;
+        }
+
+        public Client(string login, string pasword) : this()
+        {
+            Login = login;
+            Password = pasword;
+        }
+
+        public bool Equals(Client other)
+        {
+            return Login == other.Login && Password == other.Password
+                && UserStatus == other.UserStatus;
+        }
     }
 }

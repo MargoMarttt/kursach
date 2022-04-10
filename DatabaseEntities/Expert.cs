@@ -11,31 +11,57 @@ namespace DatabaseEntities
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class Expert
+    using System.Configuration;
+    using System.Drawing;
+    using System.IO;
+    using System.Runtime.Serialization.Formatters.Binary;
+    [Serializable]
+    public partial class Expert : IEquatable<Expert>
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Expert()
-        {
-            this.Rate = new HashSet<Rate>();
-        }
-    
-        public int Id { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public System.DateTime LastOnline { get; set; }
         public double RateWeight { get; set; }
-        public Status UserStatus { get; set; }
-        public bool IsOnline { get; set; }
 
-        public Expert(string login, string password, float rateWeight)
+        public int Id { get; set; }
+
+        public string Password { get; set; }
+
+        public string Login { get; set; }
+
+        public Status UserStatus { get; set; }
+
+        public DateTime LastOnline { get; set; }
+
+        private bool _isOnline;
+
+        public bool IsOnline
         {
-            Login = login;
-            Password = password;
-            RateWeight = rateWeight;
+            get { return _isOnline; }
+            set { LastOnline = DateTime.Now; _isOnline = value; }
         }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Rate> Rate { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Expert()
+        {
+            Login = "empty";
+            Password = "empty";
+            UserStatus = Status.NotBanned;
+            this.Rate = new HashSet<Rate>();
+            IsOnline = false;
+        }
+
+        public Expert(string login, string password, double rateWeight = 0) : this()
+        {
+            RateWeight = rateWeight;
+            Login = login;
+            Password = password;
+        }
+
+        public bool Equals(Expert other)
+        {
+            return RateWeight == other.RateWeight && Login == other.Login
+                && Password == other.Password && UserStatus == other.UserStatus;
+        }
     }
 }
