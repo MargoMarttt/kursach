@@ -85,6 +85,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="RateDetailSupplier">
     <Key>
@@ -234,6 +235,7 @@
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Rate" Relationship="EntityModel.RateDetailSupplier" FromRole="DetailSupplier" ToRole="Rate" />
           <NavigationProperty Name="Detail" Relationship="EntityModel.DetailSupplierDetail" FromRole="DetailSupplier" ToRole="Detail" />
+          <Property Name="TotalRate" Type="Double" Nullable="false" />
         </EntityType>
         <Association Name="RateDetailSupplier">
           <End Type="EntityModel.Rate" Role="Rate" Multiplicity="*" />
@@ -315,6 +317,7 @@
         <MappingFragment StoreEntitySet="DetailSupplierSet">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TotalRate" ColumnName="TotalRate" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

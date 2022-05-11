@@ -18,8 +18,21 @@
         FindExpertByLogin,
         GetAllExperts,
         FindAdminByLogin,
+        CreateDetailSupplier,
+        CreateDetail,
+        UpdateDetailSupplier,
+        UpdateDetail,
+        DeleteDetailSupplier,
+        DeleteDetail,
         //Expert commands
-        RateVehicle, 
+        RateDetailSupplier, 
         //Client commands
+        FindDetailSupplierByName,
+        FindDetailByName,
+        FindDetailByVendorCode,
+        FindDetailBySupplierName,
+        FindDetailSupplierByTotalRate,
+        GetAllDetails,
+        GetAllSuppliers
     }
 }

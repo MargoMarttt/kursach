@@ -32,3 +32,4 @@ C:\Users\Дмитрий\source\repos\Выбор поставщиков авто�
 C:\Users\Дмитрий\source\repos\Выбор поставщиков автозапчастей(попарное сравнение)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
 C:\Users\Дмитрий\source\repos\Выбор поставщиков автозапчастей(попарное сравнение)\DatabaseEntities\obj\Debug\DatabaseEntities.dll
 C:\Users\Дмитрий\source\repos\Выбор поставщиков автозапчастей(попарное сравнение)\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Выбор поставщиков автозапчастей(попарное сравнение)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.AssemblyReference.cache

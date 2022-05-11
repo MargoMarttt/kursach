@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/06/2022 21:58:23
+-- Date Created: 04/08/2022 22:16:49
 -- Generated from EDMX file: C:\Users\Дмитрий\source\repos\Выбор поставщиков автозапчастей(попарное сравнение)\DatabaseEntities\EntityModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [ClearDB];
+USE [Temp];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
@@ -112,7 +112,8 @@ GO
 -- Creating table 'DetailSupplierSet'
 CREATE TABLE [dbo].[DetailSupplierSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Name] nvarchar(max)  NOT NULL
+    [Name] nvarchar(max)  NOT NULL,
+    [TotalRate] float  NOT NULL
 );
 GO
 

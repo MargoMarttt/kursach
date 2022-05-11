@@ -18,5 +18,14 @@ namespace TCPConnectionAPI_C_sharp_
             DBconnection.Dispose();
         }
 
+        public List<Detail> FindDetails(Func<Detail, bool> func)
+        {
+            return DBconnection.FindDetails(func);
+        }
+
+        public List<DetailSupplier> FindDetailSuppliers(Func<DetailSupplier, bool> func)
+        {
+            return DBconnection.FindDetailSuppliers(func);
+        }
     }
 }

@@ -88,6 +88,7 @@
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Rate" Relationship="EntityModel.RateDetailSupplier" FromRole="DetailSupplier" ToRole="Rate" />
     <NavigationProperty Name="Detail" Relationship="EntityModel.DetailSupplierDetail" FromRole="DetailSupplier" ToRole="Detail" />
+    <Property Name="TotalRate" Type="Double" Nullable="false" />
   </EntityType>
   <Association Name="RateDetailSupplier">
     <End Type="EntityModel.Rate" Role="Rate" Multiplicity="*" />

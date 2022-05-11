@@ -17,5 +17,11 @@ namespace TCPConnectionAPI_C_sharp_
         bool UnbanClientsWhere(Func<Client, bool> comparer);
         bool DeleteClientsWhere(Func<Client, bool> comparer);
         bool DeleteExpertsWhere(Func<Expert, bool> comparer);
+        int CreateNewDetailSupplier(DetailSupplier obj);
+        int CreateNewDetail(Detail obj, string supplierName);
+        bool UpdateDetailSupplier(DetailSupplier newVersion);
+        bool UpdateDetail(Detail newVersion);
+        bool DeleteDetailSuppliers(Func<DetailSupplier, bool> func);
+        bool DeleteDetails(Func<Detail, bool> func);
     }
 }

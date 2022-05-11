@@ -160,5 +160,90 @@ namespace TCPConnectionAPI_C_sharp_
             DBconnection.Configuration.ProxyCreationEnabled = false;
             return true;
         }
+
+        public int CreateDetailSupplier(DetailSupplier obj)
+        {
+            DBconnection.Configuration.ProxyCreationEnabled = true;
+            DBconnection.DetailSupplierSet.Add(obj);
+            DBconnection.SaveChanges();
+            DBconnection.Configuration.ProxyCreationEnabled = false;
+            return obj.Id;
+        }
+
+        public bool DeleteDetailSupplierWhere(Func<DetailSupplier, bool> func)
+        {
+            var collection = FindDetailSuppliers(func);
+            if (collection.Count == 0) { return false; }
+            else
+            {
+                DBconnection.Configuration.ProxyCreationEnabled = true;
+                DBconnection.DetailSupplierSet.RemoveRange(collection);
+                DBconnection.Configuration.ProxyCreationEnabled = false;
+                DBconnection.SaveChanges();
+                return true;
+            }
+        }
+
+        public bool UpdateDetailSupplier(DetailSupplier newVersion)
+        {
+            DBconnection.Configuration.ProxyCreationEnabled = true;
+            var buf = DBconnection.DetailSupplierSet.Find(newVersion.Id);
+            if (buf == null) return false;
+            else
+            {
+                buf.Id = newVersion.Id;
+                buf.Name = newVersion.Name;
+                buf.Rate = newVersion.Rate;
+                buf.Detail = newVersion.Detail;
+                DBconnection.SaveChanges();
+                DBconnection.Configuration.ProxyCreationEnabled = false;
+                return true;
+            }
+        }
+
+        public List<DetailSupplier> FindDetailSuppliers(Func<DetailSupplier, bool> func)
+        {
+            return DBconnection.DetailSupplierSet
+                 .Include("Rate.Expert")
+                 .Include("Detail")
+                 .Where(func)
+                 .ToList();
+        }
+
+        public List<Detail> FindDetails(Func<Detail, bool> func)
+        {
+            return DBconnection.DetailSet
+                    .Include("DetailSupplier.Rate")
+                    .Where(func)
+                    .ToList();
+        }
+
+        public bool UpdateDetail(Detail newVersion)
+        {
+            var buf = DBconnection.DetailSet.Find(newVersion.Id);
+            if (buf == null) return false;
+            DBconnection.Configuration.ProxyCreationEnabled = true;
+            buf.Name = newVersion.Name;
+            buf.VendorCode = newVersion.VendorCode;
+            buf.DetailSupplierId = newVersion.DetailSupplierId;
+            buf.DetailSupplier = newVersion.DetailSupplier;
+            DBconnection.SaveChanges();
+            DBconnection.Configuration.ProxyCreationEnabled = false;
+            return true;
+        }
+
+        public bool DeleteDetailsWhere(Func<Detail, bool> func)
+        {
+            var collection = FindDetails(func);
+            if (collection.Count == 0) { return false; }
+            else
+            {
+                DBconnection.Configuration.ProxyCreationEnabled = true;
+                DBconnection.DetailSet.RemoveRange(collection);
+                DBconnection.Configuration.ProxyCreationEnabled = false;
+                DBconnection.SaveChanges();
+                return true;
+            }
+        }
     }
 }

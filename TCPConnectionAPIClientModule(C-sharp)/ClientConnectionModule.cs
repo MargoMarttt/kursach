@@ -46,7 +46,7 @@ namespace TCPConnectionAPIClientModule_C_sharp_
 
         public AnswerFromServer Rate(int entityId, float Rate)
         {
-            protocol.sendCommand(CommandsToServer.RateVehicle);
+            protocol.sendCommand(CommandsToServer.RateDetailSupplier);
             protocol.sendString(entityId.ToString());
             protocol.sendString(Rate.ToString());
             return protocol.receiveAnswerFromServer();
@@ -188,6 +188,84 @@ namespace TCPConnectionAPIClientModule_C_sharp_
         {
             protocol.sendCommand(CommandsToServer.GetAllExperts);
             return protocol.receiveCollection<Expert>();
+        }
+
+        public AnswerFromServer CreateNewDetailSupplier(DetailSupplier obj)
+        {
+            protocol.sendCommand(CommandsToServer.CreateDetailSupplier);
+            protocol.SendObject(obj);
+            return protocol.receiveAnswerFromServer();
+        }
+
+        public AnswerFromServer CreateNewDetail(Detail obj, string supplierName)
+        {
+            protocol.sendCommand(CommandsToServer.CreateDetail);
+            protocol.SendObject(obj);
+            protocol.sendString(supplierName);
+            return protocol.receiveAnswerFromServer();
+        }
+
+        public AnswerFromServer UpdateDetail(Detail newVersion)
+        {
+            protocol.sendCommand(CommandsToServer.UpdateDetail);
+            protocol.SendObject(newVersion);
+            return protocol.receiveAnswerFromServer();
+        }
+
+        public AnswerFromServer UpdateDetailSupplier(DetailSupplier newVersion)
+        {
+            protocol.sendCommand(CommandsToServer.UpdateDetailSupplier);
+            protocol.SendObject(newVersion);
+            return protocol.receiveAnswerFromServer();
+        }
+
+        public AnswerFromServer DeleteDetail(int id)
+        {
+            protocol.sendCommand(CommandsToServer.DeleteDetail);
+            protocol.sendString(id.ToString());
+            return protocol.receiveAnswerFromServer();
+        }
+
+        public AnswerFromServer DeleteDetailSupplier(int id)
+        {
+            protocol.sendCommand(CommandsToServer.DeleteDetailSupplier);
+            protocol.sendString(id.ToString());
+            return protocol.receiveAnswerFromServer();
+        }
+
+        public List<DetailSupplier> FindDetailSuppliersByName(string name)
+        {
+            protocol.sendCommand(CommandsToServer.FindDetailBySupplierName);
+            protocol.sendString(name);
+            return protocol.receiveCollection<DetailSupplier>();
+        }
+
+        public List<DetailSupplier> FindDetailSuppliersByTotalRate(float rate)
+        {
+            protocol.sendCommand(CommandsToServer.FindDetailSupplierByTotalRate);
+            protocol.sendString(rate.ToString());
+            return protocol.receiveCollection<DetailSupplier>();
+        }
+
+        public List<Detail> FindDetailByName(string name)
+        {
+            protocol.sendCommand(CommandsToServer.FindDetailByName);
+            protocol.sendString(name);
+            return protocol.receiveCollection<Detail>();
+        }
+
+        public List<Detail> FindDetailByVendorCode(int code)
+        {
+            protocol.sendCommand(CommandsToServer.FindDetailByVendorCode);
+            protocol.sendString(code.ToString());
+            return protocol.receiveCollection<Detail>();
+        }
+
+        public List<Detail> FindDetailBySupplierName(string supplierName)
+        {
+            protocol.sendCommand(CommandsToServer.FindDetailBySupplierName);
+            protocol.sendString(supplierName);
+            return protocol.receiveCollection<Detail>();
         }
     }
 }

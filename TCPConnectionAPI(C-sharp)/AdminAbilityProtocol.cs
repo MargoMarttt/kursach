@@ -123,5 +123,51 @@ namespace TCPConnectionAPI_C_sharp_
         {
             return ReportCreator.CreateReportAboutVehicles();
         }
+
+        public int CreateNewDetailSupplier(DetailSupplier obj)
+        {
+            return dbContext.CreateDetailSupplier(obj);
+        }
+
+        public int CreateNewDetail(Detail obj, string supplierName)
+        {
+            var supplier = dbContext.FindDetailSuppliers(c => c.Name == supplierName);
+            if (supplier.Count != 1) { return 0; }
+            supplier[0].Detail.Add(obj);
+            dbContext.UpdateDetailSupplier(supplier[0]);
+            var buf = dbContext.FindDetailSuppliers(c => c.Name == supplierName);
+            var addedObj = buf.Find(c => c.Equals(obj));
+            return addedObj.Id;
+        }
+
+        public bool UpdateDetailSupplier(DetailSupplier newVersion)
+        {
+            return dbContext.UpdateDetailSupplier(newVersion);
+        }
+
+        public bool UpdateDetail(Detail newVersion)
+        {
+            return dbContext.UpdateDetail(newVersion);
+        }
+
+        public bool DeleteDetailSuppliers(Func<DetailSupplier, bool> func)
+        {
+            return dbContext.DeleteDetailSupplierWhere(func);
+        }
+
+        public bool DeleteDetails(Func<Detail, bool> func)
+        {
+            return dbContext.DeleteDetailsWhere(func);
+        }
+
+        public List<DetailSupplier> FindDetailSuppliers(Func<DetailSupplier, bool> func)
+        {
+            return dbContext.FindDetailSuppliers(func);
+        }
+
+        public List<Detail> FindDetails(Func<Detail, bool> func)
+        {
+            return dbContext.FindDetails(func);
+        }
     }
 }

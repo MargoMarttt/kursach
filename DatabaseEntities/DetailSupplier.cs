@@ -12,7 +12,7 @@ namespace DatabaseEntities
     using System;
     using System.Collections.Generic;
     
-    public partial class DetailSupplier
+    public partial class DetailSupplier :IRateable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DetailSupplier()
@@ -28,5 +28,6 @@ namespace DatabaseEntities
         public virtual ICollection<Rate> Rate { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Detail> Detail { get; set; }
+        public double TotalRate { get; set; }
     }
 }

@@ -149,13 +149,49 @@ namespace TCPConnectionAPI_C_sharp_
                 {
                     switch (_protocol.receiveCommand(user.ConnectionSocket))
                     {
-                        
+
                         case CommandsToServer.PreviousRoom:
                             {
                                 var disconnectingUser = _userViewAndCreatePermission.FindClientsWhere(c => c.Id == user.DB_Id).First();
                                 disconnectingUser.IsOnline = false;
                                 _userViewAndCreatePermission.UpdateClient(disconnectingUser);
                                 return;
+                            }
+                        case CommandsToServer.FindDetailSupplierByName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(clientProtocol.FindDetailSuppliers(c => c.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailByName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(clientProtocol.FindDetails(c => c.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailByVendorCode:
+                            {
+                                var param = int.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                _protocol.sendCollection(clientProtocol.FindDetails(c => c.VendorCode == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailBySupplierName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(clientProtocol.FindDetails(c => c.DetailSupplier.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllDetails:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(clientProtocol.FindDetails(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllSuppliers:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(clientProtocol.FindDetails(c => c != null), user.ConnectionSocket);
+                                break;
                             }
                         default:
                             {
@@ -178,7 +214,7 @@ namespace TCPConnectionAPI_C_sharp_
                 {
                     switch (_protocol.receiveCommand(user.ConnectionSocket))
                     {
-                        
+
                         case CommandsToServer.GetAllClients:
                             {
                                 _protocol.sendCollection(adminProtocol.FindClientsWhere(c => c != null), user.ConnectionSocket);
@@ -249,7 +285,7 @@ namespace TCPConnectionAPI_C_sharp_
                                 else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
-                        
+
                         case CommandsToServer.FindAdminByLogin:
                             {
                                 var login = _protocol.receiveLogin(user.ConnectionSocket);
@@ -266,6 +302,97 @@ namespace TCPConnectionAPI_C_sharp_
                             {
                                 var login = _protocol.receiveLogin(user.ConnectionSocket);
                                 _protocol.sendCollection(adminProtocol.FindExpertsWhere(c => c.Login == login), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.CreateDetailSupplier:
+                            {
+                                var res = adminProtocol.CreateNewDetailSupplier(_protocol.ReceiveObject<DetailSupplier>(user.ConnectionSocket));
+                                if (res > 0) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.CreateDetail:
+                            {
+                                var obj = _protocol.ReceiveObject<Detail>(user.ConnectionSocket);
+                                var supplierName = _protocol.receiveString(user.ConnectionSocket);
+                                var res = adminProtocol.CreateNewDetail(obj, supplierName);
+                                if (res > 0) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.UpdateDetailSupplier:
+                            {
+                                var obj = _protocol.ReceiveObject<DetailSupplier>(user.ConnectionSocket);
+                                var res = adminProtocol.UpdateDetailSupplier(obj);
+                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.UpdateDetail:
+                            {
+                                var obj = _protocol.ReceiveObject<Detail>(user.ConnectionSocket);
+                                var res = adminProtocol.UpdateDetail(obj);
+                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.DeleteDetailSupplier:
+                            {
+                                var id = int.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                var res = adminProtocol.DeleteDetailSuppliers(c=>c.Id == id);
+                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.DeleteDetail:
+                            {
+                                var id = int.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                var res = adminProtocol.DeleteDetails(c => c.Id == id);
+                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailSupplierByName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(adminProtocol.FindDetailSuppliers(c => c.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailSupplierByTotalRate:
+                            {
+                                var param = float.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                _protocol.sendCollection(adminProtocol.FindDetailSuppliers(c => c.TotalRate == param), user.ConnectionSocket);
+                                break;
+                            }
+
+                        case CommandsToServer.FindDetailByName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(adminProtocol.FindDetails(c => c.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailByVendorCode:
+                            {
+                                var param = int.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                _protocol.sendCollection(adminProtocol.FindDetails(c => c.VendorCode == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailBySupplierName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(adminProtocol.FindDetails(c => c.DetailSupplier.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllDetails:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(adminProtocol.FindDetails(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllSuppliers:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(adminProtocol.FindDetails(c => c != null), user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.PreviousRoom:
@@ -296,7 +423,50 @@ namespace TCPConnectionAPI_C_sharp_
                 {
                     switch (_protocol.receiveCommand(user.ConnectionSocket))
                     {
-                       
+                        case CommandsToServer.FindDetailSupplierByName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(expertProtocol.FindDetailSuppliers(c => c.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailByName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(expertProtocol.FindDetails(c => c.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailByVendorCode:
+                            {
+                                var param = int.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                _protocol.sendCollection(expertProtocol.FindDetails(c => c.VendorCode == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.FindDetailBySupplierName:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(expertProtocol.FindDetails(c => c.DetailSupplier.Name == param), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllDetails:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(expertProtocol.FindDetails(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllSuppliers:
+                            {
+                                var param = _protocol.receiveString(user.ConnectionSocket);
+                                _protocol.sendCollection(expertProtocol.FindDetails(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.RateDetailSupplier:
+                            {
+                                var id = int.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                var rate = float.Parse(_protocol.receiveString(user.ConnectionSocket));
+                                var obj = expertProtocol.FindDetailSuppliers(c => c.Id == id)[0];
+                                var res = expertProtocol.Rate(obj, expert, rate);
+                                break;
+                            }
                         case CommandsToServer.PreviousRoom:
                             {
                                 var client = _userViewAndCreatePermission.FindExpertsWhere(c => c.Id == user.DB_Id).First();

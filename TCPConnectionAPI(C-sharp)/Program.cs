@@ -11,6 +11,7 @@ namespace TCPConnectionAPI_C_sharp_
 {
     class Program
     {
+        //Программное средство для принятия решений о выборе поставщиков автозапчастей методом полного попарного сравнения(на примере автосервиса).
         static void Main(string[] args)
         {
             try

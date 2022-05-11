@@ -80,6 +80,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="RateDetailSupplier">
     <Key>

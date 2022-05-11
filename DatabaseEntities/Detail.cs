@@ -16,7 +16,7 @@ namespace DatabaseEntities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double VendorCode { get; set; }
+        public int VendorCode { get; set; }
         public int DetailSupplierId { get; set; }
     
         public virtual DetailSupplier DetailSupplier { get; set; }
