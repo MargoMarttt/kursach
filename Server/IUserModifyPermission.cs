@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DatabaseEntities;
+﻿using DatabaseEntities;
+using System;
 
-namespace Server
+namespace TCPConnectionAPI_C_sharp_
 {
     public interface IUserModifyPermission : IUserViewPermission
     {

@@ -1,0 +1,255 @@
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\Front-End-Three.exe.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\Front-End-Three.exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\Front-End-Three.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UserApp.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Add.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\AddAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\AddExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\AddUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\BlockAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\BlockExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\BlockUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Delete.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\DeleteAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\DeleteExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\DeleteUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Edit.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\EditUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\ExpertMenu.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\ExpertMethod.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\ExpertRegistration.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Filtration.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindBySomething.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\MainContentWindow.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\MainWindow.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Registration.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Sort.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UnblockAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UnblockExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UnblockUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UserMenu.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\App.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Front-End-Three_MarkupCompile.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Front-End-Three_MarkupCompile.lref
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\App.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Add.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\AddAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\AddExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\AddUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\BlockAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\BlockExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\BlockUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Delete.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\DeleteAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\DeleteExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\DeleteUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Edit.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\EditUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\ExpertMenu.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\ExpertMethod.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\ExpertRegistration.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Filtration.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindBySomething.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\FindUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\MainContentWindow.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\MainWindow.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Registration.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Sort.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UnblockAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UnblockExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UnblockUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UserMenu.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Front-End-Three.g.resources
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Front_End_Three.Properties.Resources.resources
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UserApp.csproj.GenerateResource.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UserApp.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\UserApp.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Front-End-Three.exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Front-End-Three\obj\Debug\Front-End-Three.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\Front-End-Three.exe.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\Front-End-Three.exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\Front-End-Three.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UserApp.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Add.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\AddAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\AddExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\AddUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\BlockAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\BlockExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\BlockUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Delete.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\DeleteAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\DeleteExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\DeleteUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Edit.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\EditUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\ExpertMenu.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\ExpertMethod.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\ExpertRegistration.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Filtration.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindBySomething.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\MainContentWindow.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\MainWindow.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Registration.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Sort.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UnblockAdmin.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UnblockExpert.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UnblockUser.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UserMenu.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\App.g.cs
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Front-End-Three_MarkupCompile.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Front-End-Three_MarkupCompile.lref
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\App.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Add.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\AddAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\AddExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\AddUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\BlockAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\BlockExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\BlockUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Delete.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\DeleteAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\DeleteExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\DeleteUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Edit.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\EditUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\ExpertMenu.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\ExpertMethod.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\ExpertRegistration.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Filtration.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindBySomething.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\FindUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\MainContentWindow.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\MainWindow.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Registration.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Sort.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UnblockAdmin.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UnblockExpert.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UnblockUser.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UserMenu.baml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Front-End-Three.g.resources
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Front_End_Three.Properties.Resources.resources
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UserApp.csproj.GenerateResource.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UserApp.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\UserApp.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Front-End-Three.exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\UserApp\obj\Debug\Front-End-Three.pdb
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\Front-End-Three.exe.config
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\Front-End-Three.exe
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\Front-End-Three.pdb
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\DatabaseEntities.dll
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\EntityFramework.dll
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\DatabaseEntities.pdb
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\DatabaseEntities.dll.config
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\EntityFramework.xml
+D:\учеба\4 сем\курсач\sourse\UserApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UserApp.csproj.AssemblyReference.cache
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Add.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\AddAdmin.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\AddExpert.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\AddUser.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\BlockAdmin.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\BlockExpert.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\BlockUser.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Delete.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\DeleteAdmin.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\DeleteExpert.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\DeleteUser.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Edit.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\EditUser.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\ExpertMenu.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\ExpertMethod.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\ExpertRegistration.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Filtration.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindAdmin.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindBySomething.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindExpert.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindUser.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\MainContentWindow.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\MainWindow.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Registration.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Sort.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UnblockAdmin.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UnblockExpert.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UnblockUser.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UserMenu.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\App.g.cs
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Front-End-Three_MarkupCompile.cache
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Front-End-Three_MarkupCompile.lref
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\App.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Add.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\AddAdmin.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\AddExpert.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\AddUser.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\BlockAdmin.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\BlockExpert.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\BlockUser.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Delete.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\DeleteAdmin.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\DeleteExpert.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\DeleteUser.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Edit.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\EditUser.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\ExpertMenu.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\ExpertMethod.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\ExpertRegistration.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Filtration.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindAdmin.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindBySomething.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindExpert.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\FindUser.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\MainContentWindow.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\MainWindow.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Registration.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Sort.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UnblockAdmin.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UnblockExpert.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UnblockUser.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UserMenu.baml
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Front-End-Three.g.resources
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Front_End_Three.Properties.Resources.resources
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UserApp.csproj.GenerateResource.cache
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UserApp.csproj.CoreCompileInputs.cache
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\UserApp.csproj.CopyComplete
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Front-End-Three.exe
+D:\учеба\4 сем\курсач\sourse\UserApp\obj\Debug\Front-End-Three.pdb

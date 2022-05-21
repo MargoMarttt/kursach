@@ -1,0 +1,69 @@
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.AssemblyReference.cache
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\obj\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\obj\Debug\DatabaseEntities.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\obj\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\DatabaseEntities\obj\Debug\DatabaseEntities.pdb

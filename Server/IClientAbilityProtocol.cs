@@ -1,14 +1,11 @@
-﻿using System;
+﻿using DatabaseEntities;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DatabaseEntities;
 
-namespace Server
+namespace TCPConnectionAPI_C_sharp_
 {
     public interface IClientAbilityProtocol : IDisposable
     {
-        //List<Vehicle> FindVehiclesWhere(Func<Vehicle, bool> comparer);
+        List<Car> FindCarsWhere(Func<Car, bool> comparer);
     }
 }

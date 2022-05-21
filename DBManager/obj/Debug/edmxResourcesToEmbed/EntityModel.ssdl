@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EntityModelStoreContainer">
+    <EntitySet Name="RateSet" EntityType="EntityModel.Store.RateSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdminSet" EntityType="EntityModel.Store.AdminSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientSet" EntityType="EntityModel.Store.ClientSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExpertSet" EntityType="EntityModel.Store.ExpertSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CarSet" EntityType="EntityModel.Store.CarSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ProducedCarRate" Association="EntityModel.Store.ProducedCarRate">
+      <End Role="ProducedCar" EntitySet="CarSet" />
+      <End Role="Rate" EntitySet="RateSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="RateSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="TimeOfCommit" Type="datetime" Nullable="false" />
+    <Property Name="ProducedCarId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpertSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="LastOnline" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CarSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorCode" Type="int" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Nullable="false" />
+    <Property Name="BinaryPhoto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="TotalRate" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="ProducedCarRate">
+    <End Role="ProducedCar" Type="EntityModel.Store.CarSet" Multiplicity="1" />
+    <End Role="Rate" Type="EntityModel.Store.RateSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProducedCar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="ProducedCarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

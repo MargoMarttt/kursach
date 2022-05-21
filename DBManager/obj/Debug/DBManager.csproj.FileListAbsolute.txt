@@ -1,0 +1,12 @@
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\DatabaseEntities.dll.config
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\DatabaseEntities.dll
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\DatabaseEntities.pdb
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\EntityFramework.dll
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\EntityFramework.SqlServer.dll
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\EntityFramework.xml
+D:\учеба\4 сем\курсач\sourse\DBManager\bin\Debug\EntityFramework.SqlServer.xml
+D:\учеба\4 сем\курсач\sourse\DBManager\obj\Debug\DBManager.csproj.AssemblyReference.cache
+D:\учеба\4 сем\курсач\sourse\DBManager\obj\Debug\DBManager.csproj.CoreCompileInputs.cache
+D:\учеба\4 сем\курсач\sourse\DBManager\obj\Debug\DBManager.csproj.CopyComplete
+D:\учеба\4 сем\курсач\sourse\DBManager\obj\Debug\DatabaseEntities.dll
+D:\учеба\4 сем\курсач\sourse\DBManager\obj\Debug\DatabaseEntities.pdb

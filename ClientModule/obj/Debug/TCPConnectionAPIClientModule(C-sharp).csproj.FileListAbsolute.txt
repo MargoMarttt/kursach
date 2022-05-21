@@ -1,0 +1,119 @@
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Курсовой проект\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\stani\source\repos\UserApp(.NET Framework)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод предпочтения на примере аэропорта\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод ранга на примере пекарни\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Выбор перевозчика методом предпочтений (на прим. мор. порта)\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод взвешенных экспертных оценок на примере автозавода\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\TCPConnectionAPIClientModule(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPIClientModule(C-sharp)\obj\Debug\TCPConnectionAPIClientModule(C-sharp).pdb

@@ -1,28 +1,24 @@
-﻿using System;
+﻿using ClassLibraryForTCPConnectionAPI_C_sharp_;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using TCP_Common_Entities;
 
-namespace Server
+namespace TCPConnectionAPI_C_sharp_
 {
-    public interface IServer
+    public interface IServerProtocol
     {
-        Socket acceptConnectionRequest();
-        string receiveString(Socket from);
-        void sendString(string str, Socket destination);
-        string receiveLogin(Socket from);
-        string receivePassword(Socket from);
-        void sendCollection<T>(List<T> collection, Socket destination);
-        List<T> receiveCollection<T>(Socket from);
+        Socket AcceptConnectionRequest();
+        string ReceiveString(Socket from);
+        void SendString(string str, Socket destination);
+        string ReceiveLogin(Socket from);
+        string ReceivePassword(Socket from);
+        void SendCollection<T>(List<T> collection, Socket destination);
+        List<T> ReceiveCollection<T>(Socket from);
         T ReceiveObject<T>(Socket from) where T : class;
         void SendObject<T>(T obj, Socket destination) where T : class;
-        CommandsToServer receiveCommand(Socket from);
-        void sendAnswerFromServer(AnswerFromServer answer, Socket desination);
-        void sendTypeOfUser(TypeOfUser typeOfUser, Socket destination);
-        TypeOfUser receiveTypeOfUser(Socket from);
-        void closeConnection();
+        CommandsToServer ReceiveCommand(Socket from);
+        void SendAnswerFromServer(AnswerFromServer answer, Socket desination);
+        void SendTypeOfUser(TypeOfUser typeOfUser, Socket destination);
+        TypeOfUser ReceiveTypeOfUser(Socket from);
+        void CloseConnection();
     }
 }

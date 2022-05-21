@@ -1,2 +1,51 @@
-C:\Users\Дмитрий\source\repos\Server\obj\Debug\Server.csproj.AssemblyReference.cache
-C:\Users\Дмитрий\source\repos\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\TCPConnectionAPI(C-sharp)\obj\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\TCPConnectionAPI(C-sharp).exe.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\TCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\DatabaseEntities.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\DatabaseEntities.pdb
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\DatabaseEntities.dll.config
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\obj\Debug\TCPConnectionAPI(C-sharp).exe
+C:\Users\Дмитрий\source\repos\Метод полного попарного сравнения на примере автосервиса\Server\obj\Debug\TCPConnectionAPI(C-sharp).pdb
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\TCPConnectionAPI(C-sharp).exe.config
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\TCPConnectionAPI(C-sharp).exe
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\TCPConnectionAPI(C-sharp).pdb
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).dll
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\DatabaseEntities.dll
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\EntityFramework.dll
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\EntityFramework.SqlServer.dll
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\ClassLibraryForTCPConnectionAPI(C-sharp).pdb
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\DatabaseEntities.pdb
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\DatabaseEntities.dll.config
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\EntityFramework.xml
+D:\учеба\4 сем\курсач\sourse\Server\bin\Debug\EntityFramework.SqlServer.xml
+D:\учеба\4 сем\курсач\sourse\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\учеба\4 сем\курсач\sourse\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\учеба\4 сем\курсач\sourse\Server\obj\Debug\Server.csproj.CopyComplete
+D:\учеба\4 сем\курсач\sourse\Server\obj\Debug\TCPConnectionAPI(C-sharp).exe
+D:\учеба\4 сем\курсач\sourse\Server\obj\Debug\TCPConnectionAPI(C-sharp).pdb

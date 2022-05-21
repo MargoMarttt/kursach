@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using ClassLibraryForTCPConnectionAPI_C_sharp_;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using TCP_Common_Entities;
 
-namespace Server
+namespace TCPConnectionAPI_C_sharp_
 {
     public class ConnectedUserInfo
     {
@@ -17,5 +12,6 @@ namespace Server
         {
             Type = TypeOfUser.Undefined;
         }
+
     }
 }

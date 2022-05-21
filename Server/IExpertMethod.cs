@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DatabaseEntities;
+﻿using DatabaseEntities;
 
-namespace Server
+namespace TCPConnectionAPI_C_sharp_
 {
     public interface IExpertMethod
     {
-       // IRateable Rate(IRateable obj, Expert expert, float rate);
+        IRateable Rate(IRateable obj, Expert expert, float rate);
     }
 }

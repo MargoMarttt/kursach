@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Server
+﻿namespace TCPConnectionAPI_C_sharp_
 {
-    public interface IMainDBPermission : IUserModifyPermission, IDataModifyPermission
+    public interface IMainDBPermission : IUserModifyPermission, IDataModify
     {
     }
 }

@@ -1,41 +1,40 @@
-﻿using DatabaseEntities;
+﻿using ClassLibraryForTCPConnectionAPI_C_sharp_;
+using DatabaseEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using TCP_Common_Entities;
 
-namespace Server
+namespace TCPConnectionAPI_C_sharp_
 {
     public class Server
     {
-        protected IServer _protocol;
+        protected IServerProtocol _protocol;
 
         protected ICollection<ConnectedUserInfo> _connectedUsers;
 
-        protected IUserModifyPermission _userViewAndCreatePermission;
+        protected IUserModifyPermission serverAccessPermission;
 
         protected virtual int Registration(ref ConnectedUserInfo user)
         {
-            user.Type = _protocol.receiveTypeOfUser(user.ConnectionSocket);
-            string login = _protocol.receiveLogin(user.ConnectionSocket);
-            string password = _protocol.receivePassword(user.ConnectionSocket);
-            float rateWeight = 0;
-            if (user.Type == TypeOfUser.Expert)
-            {
-                rateWeight = float.Parse(_protocol.receiveString(user.ConnectionSocket));
-            }
+            user.Type = _protocol.ReceiveTypeOfUser(user.ConnectionSocket);
             switch (user.Type)
             {
                 case TypeOfUser.Admin:
-                    return _userViewAndCreatePermission.CreateAdmin(new Admin(login, password));
+                    {
+                        var obj = _protocol.ReceiveObject<Admin>(user.ConnectionSocket);
+                        return serverAccessPermission.CreateAdmin(obj);
+                    }
                 case TypeOfUser.Client:
-                    return _userViewAndCreatePermission.CreateClient(new Client(login, password));
+                    {
+                        var obj = _protocol.ReceiveObject<Client>(user.ConnectionSocket);
+                        return serverAccessPermission.CreateClient(obj);
+                    }
                 case TypeOfUser.Expert:
-                    return _userViewAndCreatePermission.CreateExpert(new Expert(login, password, rateWeight));
+                    {
+                        var obj = _protocol.ReceiveObject<Expert>(user.ConnectionSocket);
+                        return serverAccessPermission.CreateExpert(obj);
+                    }
                 case TypeOfUser.Undefined:
                     return 0;
                 default:
@@ -45,10 +44,10 @@ namespace Server
 
         protected virtual int Authorization(ref ConnectedUserInfo user)
         {
-            string login = _protocol.receiveLogin(user.ConnectionSocket);
-            string password = _protocol.receivePassword(user.ConnectionSocket);
+            string login = _protocol.ReceiveLogin(user.ConnectionSocket);
+            string password = _protocol.ReceivePassword(user.ConnectionSocket);
 
-            var admins = _userViewAndCreatePermission.FindAdminsWhere(c => c.Login == login);
+            var admins = serverAccessPermission.FindAdminsWhere(c => c.Login == login);
             if (admins.Count == 0) { user.Type = TypeOfUser.Undefined; }
             else
             {
@@ -57,7 +56,7 @@ namespace Server
                 { user.Type = TypeOfUser.Admin; return admin.Id; }
             }
 
-            var clients = _userViewAndCreatePermission.FindClientsWhere(c => c.Login == login);
+            var clients = serverAccessPermission.FindClientsWhere(c => c.Login == login);
             if (clients.Count == 0) { user.Type = TypeOfUser.Undefined; }
             else
             {
@@ -67,7 +66,7 @@ namespace Server
             }
 
 
-            var experts = _userViewAndCreatePermission.FindExpertsWhere(c => c.Login == login);
+            var experts = serverAccessPermission.FindExpertsWhere(c => c.Login == login);
             if (experts.Count == 0) { user.Type = TypeOfUser.Undefined; }
             else
             {
@@ -85,33 +84,43 @@ namespace Server
         {
             while (true)
             {
-                switch (_protocol.receiveCommand(user.ConnectionSocket))
+                switch (_protocol.ReceiveCommand(user.ConnectionSocket))
                 {
                     case CommandsToServer.Registration:
                         {
                             int id = Registration(ref user);
                             if (id > 0)
                             {
-                                _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
                                 return id;
                             }
                             else
                             {
-                                _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 continue;
                             }
                         }
                     case CommandsToServer.Authorization:
                         {
                             int id = Authorization(ref user);
-                            _protocol.sendTypeOfUser(user.Type, user.ConnectionSocket);
-                            return id;
+                            _protocol.SendTypeOfUser(user.Type, user.ConnectionSocket);
+                            if (id > 0)
+                            {
+                                return id;
+                            }
+                            else
+                            {
+                                continue;
+                            }
+
                         }
-                    case CommandsToServer.Disconnect:
-                        return 0;
+                    case CommandsToServer.PreviousRoom:
+                        {
+                            return 0;
+                        }
                     default:
                         {
-                            _protocol.sendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
+                            _protocol.SendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
                             return 0;
                         }
                 }
@@ -121,44 +130,63 @@ namespace Server
         protected virtual void UserHandler(object client)
         {
             ConnectedUserInfo user = client as ConnectedUserInfo;
-            user.DB_Id = Validation(ref user);
-            if (user.DB_Id <= 0) { user.ConnectionSocket.Close(); return; }
-            switch (user.Type)
+            try
             {
-                case TypeOfUser.Admin:
-                    { AdminHandler(user); break; }
-                case TypeOfUser.Client:
-                    { ClientHandler(user); break; }
-                case TypeOfUser.Expert:
-                    { ExpertHandler(user); break; }
-                default:
-                    break;
+                while (true)
+                {
+                    user.DB_Id = Validation(ref user);
+                    if (user.DB_Id <= 0) { Console.WriteLine("Client disconnected"); user.ConnectionSocket.Close(); return; }
+                    switch (user.Type)
+                    {
+                        case TypeOfUser.Admin:
+                            { AdminHandler(user); break; }
+                        case TypeOfUser.Client:
+                            { ClientHandler(user); break; }
+                        case TypeOfUser.Expert:
+                            { ExpertHandler(user); break; }
+                        default:
+                            break;
+                    }
+                }
+            }
+            catch (System.Net.Sockets.SocketException)
+            {
+                Console.WriteLine("Пользователь отключился");
+                return;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+                return;
             }
         }
 
         protected virtual void ClientHandler(ConnectedUserInfo user)
         {
-            var client = _userViewAndCreatePermission.FindClientsWhere(c => c.Id == user.DB_Id).First();
+            var client = serverAccessPermission.FindClientsWhere(c => c.Id == user.DB_Id).First();
             client.IsOnline = true;
-            _userViewAndCreatePermission.UpdateClient(client);
+            serverAccessPermission.UpdateClient(client);
             using (IClientAbilityProtocol clientProtocol = new ClientAbilityProtocol())
             {
                 while (true)
                 {
-                    switch (_protocol.receiveCommand(user.ConnectionSocket))
+                    switch (_protocol.ReceiveCommand(user.ConnectionSocket))
                     {
-                        
-                        case CommandsToServer.Disconnect:
+                        case CommandsToServer.GetAllCars:
                             {
-                                var disconnectingUser = _userViewAndCreatePermission.FindClientsWhere(c => c.Id == user.DB_Id).First();
+                                _protocol.SendCollection(clientProtocol.FindCarsWhere(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.PreviousRoom:
+                            {
+                                var disconnectingUser = serverAccessPermission.FindClientsWhere(c => c.Id == user.DB_Id).First();
                                 disconnectingUser.IsOnline = false;
-                                _userViewAndCreatePermission.UpdateClient(disconnectingUser);
-                                user.ConnectionSocket.Close();
+                                serverAccessPermission.UpdateClient(disconnectingUser);
                                 return;
                             }
                         default:
                             {
-                                _protocol.sendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
+                                _protocol.SendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
                                 break;
                             }
                     }
@@ -168,121 +196,179 @@ namespace Server
 
         protected virtual void AdminHandler(ConnectedUserInfo user)
         {
-            var admin = _userViewAndCreatePermission.FindAdminsWhere(c => c.Id == user.DB_Id).First();
+            var admin = serverAccessPermission.FindAdminsWhere(c => c.Id == user.DB_Id).First();
             admin.IsOnline = true;
-            _userViewAndCreatePermission.UpdateAdmin(admin);
+            serverAccessPermission.UpdateAdmin(admin);
             using (IAdminAbilityProtocol adminProtocol = new AdminAbilityProtocol())
             {
                 while (true)
                 {
-                    switch (_protocol.receiveCommand(user.ConnectionSocket))
+                    switch (_protocol.ReceiveCommand(user.ConnectionSocket))
                     {
-                       
+                        case CommandsToServer.CreateCar:
+                            {
+                                if (adminProtocol.CreateCar(_protocol.ReceiveObject<Car>(user.ConnectionSocket)))
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.ModifyCar:
+                            {
+                                if (adminProtocol.ModifyCar(_protocol.ReceiveObject<Car>(user.ConnectionSocket)))
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.ModifyClient:
+                            {
+                                if (adminProtocol.ModifyClient(_protocol.ReceiveObject<Client>(user.ConnectionSocket)))
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.ModifyExpert:
+                            {
+                                if (adminProtocol.ModifyExpert(_protocol.ReceiveObject<Expert>(user.ConnectionSocket)))
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.DeleteCar:
+                            {
+                                int id = int.Parse(_protocol.ReceiveString(user.ConnectionSocket));
+                                if (adminProtocol.DeleteCarsWhere(c => c.Id == id))
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllCars:
+                            {
+                                _protocol.SendCollection(adminProtocol.FindCarsWhere(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
                         case CommandsToServer.GetAllClients:
                             {
-                                _protocol.sendCollection(adminProtocol.FindClientsWhere(c => c != null), user.ConnectionSocket);
+                                _protocol.SendCollection(adminProtocol.FindClientsWhere(c => c != null), user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.GetAllExperts:
                             {
-                                _protocol.sendCollection(adminProtocol.FindExpertsWhere(c => c != null), user.ConnectionSocket);
+                                _protocol.SendCollection(adminProtocol.FindExpertsWhere(c => c != null), user.ConnectionSocket);
 
                                 break;
                             }
-                        case CommandsToServer.RegisterNewUser:
+                        case CommandsToServer.RegisterNewAdmin:
                             {
-                                var userType = _protocol.receiveTypeOfUser(user.ConnectionSocket);
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
-                                var password = _protocol.receivePassword(user.ConnectionSocket);
-                                float rateWeight = 0.0F;
-                                if (userType == TypeOfUser.Expert) { rateWeight = float.Parse(_protocol.receiveString(user.ConnectionSocket)); };
-                                var res = adminProtocol.RegisterNewUser(userType, login, password, rateWeight);
-                                if (res > 0) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                var obj = _protocol.ReceiveObject<Admin>(user.ConnectionSocket);
+                                if (serverAccessPermission.CreateAdmin(obj) > 0) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.RegisterNewClient:
+                            {
+                                var obj = _protocol.ReceiveObject<Client>(user.ConnectionSocket);
+                                if (serverAccessPermission.CreateClient(obj) > 0) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.RegisterNewExpert:
+                            {
+                                var obj = _protocol.ReceiveObject<Expert>(user.ConnectionSocket);
+                                if (serverAccessPermission.CreateExpert(obj) > 0) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.BanClient:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
                                 var res = adminProtocol.BanClientsWhere(a => a.Login == login);
-                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                if (res) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.BanExpert:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
                                 var res = adminProtocol.BanExpertsWhere(a => a.Login == login);
-                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                if (res) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.UnbanClient:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
                                 var res = adminProtocol.UnbanClientsWhere(a => a.Login == login);
-                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                if (res) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.UnbanExpert:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
                                 var res = adminProtocol.UnbanExpertsWhere(a => a.Login == login);
-                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                if (res) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.DeleteClient:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
                                 var res = adminProtocol.DeleteClientsWhere(a => a.Login == login);
-                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                if (res) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.DeleteExpert:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
                                 var res = adminProtocol.DeleteExpertsWhere(a => a.Login == login);
-                                if (res) _protocol.sendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
-                                else _protocol.sendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                if (res) _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
                                 break;
                             }
-                        case CommandsToServer.CreateReportAboutVehicles:
+                        case CommandsToServer.CreateReport:
                             {
-                                _protocol.sendString(adminProtocol.CreateReportAboutVehicles(), user.ConnectionSocket);
+                                _protocol.SendString(adminProtocol.CreateReport(), user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.FindAdminByLogin:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
-                                _protocol.sendCollection(adminProtocol.FindAdminsWhere(c => c.Login == login), user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
+                                _protocol.SendCollection(adminProtocol.FindAdminsWhere(c => c.Login == login), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.GetAllAdmins:
+                            {
+                                _protocol.SendCollection(serverAccessPermission.FindAdminsWhere(c => c != null), user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.FindClientByLogin:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
-                                _protocol.sendCollection(adminProtocol.FindClientsWhere(c => c.Login == login), user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
+                                _protocol.SendCollection(adminProtocol.FindClientsWhere(c => c.Login == login), user.ConnectionSocket);
                                 break;
                             }
                         case CommandsToServer.FindExpertByLogin:
                             {
-                                var login = _protocol.receiveLogin(user.ConnectionSocket);
-                                _protocol.sendCollection(adminProtocol.FindExpertsWhere(c => c.Login == login), user.ConnectionSocket);
+                                var login = _protocol.ReceiveLogin(user.ConnectionSocket);
+                                _protocol.SendCollection(adminProtocol.FindExpertsWhere(c => c.Login == login), user.ConnectionSocket);
                                 break;
                             }
-                        case CommandsToServer.Disconnect:
+                        case CommandsToServer.PreviousRoom:
                             {
-                                var adm = _userViewAndCreatePermission.FindAdminsWhere(c => c.Id == user.DB_Id).First();
+                                var adm = serverAccessPermission.FindAdminsWhere(c => c.Id == user.DB_Id).First();
                                 adm.IsOnline = false;
-                                _userViewAndCreatePermission.UpdateAdmin(adm);
-                                user.ConnectionSocket.Close();
+                                serverAccessPermission.UpdateAdmin(adm);
                                 return;
                             }
                         default:
                             {
-                                _protocol.sendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
+                                _protocol.SendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
                                 break;
                             }
                     }
@@ -292,28 +378,40 @@ namespace Server
 
         protected virtual void ExpertHandler(ConnectedUserInfo user)
         {
-            var expert = _userViewAndCreatePermission.FindExpertsWhere(c => c.Id == user.DB_Id).First();
+            var expert = serverAccessPermission.FindExpertsWhere(c => c.Id == user.DB_Id).First();
             expert.IsOnline = true;
-            _userViewAndCreatePermission.UpdateExpert(expert);
+            serverAccessPermission.UpdateExpert(expert);
             using (IExpertAbilityProtocol expertProtocol = new ExpertAbilityProtocol())
             {
                 while (true)
                 {
-                    switch (_protocol.receiveCommand(user.ConnectionSocket))
+                    switch (_protocol.ReceiveCommand(user.ConnectionSocket))
                     {
-                       
-                        case CommandsToServer.Disconnect:
+                        case CommandsToServer.GetAllCars:
                             {
-                                var client = _userViewAndCreatePermission.FindExpertsWhere(c => c.Id == user.DB_Id).First();
+                                _protocol.SendCollection(expertProtocol.FindCarsWhere(c => c != null), user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.RateCar:
+                            {
+                                int entityId = int.Parse(_protocol.ReceiveString(user.ConnectionSocket));
+                                float expertRate = float.Parse(_protocol.ReceiveString(user.ConnectionSocket));
+                                var buf = expertProtocol.FindCarsWhere(c => c.Id == entityId)[0];
+                                if (expertProtocol.Rate(buf, serverAccessPermission.FindExpertsWhere(c => c.Id == user.DB_Id)[0], expertRate))
+                                    _protocol.SendAnswerFromServer(AnswerFromServer.Successfully, user.ConnectionSocket);
+                                else _protocol.SendAnswerFromServer(AnswerFromServer.Error, user.ConnectionSocket);
+                                break;
+                            }
+                        case CommandsToServer.PreviousRoom:
+                            {
+                                var client = serverAccessPermission.FindExpertsWhere(c => c.Id == user.DB_Id).First();
                                 client.IsOnline = false;
-                                _userViewAndCreatePermission.UpdateExpert(client);
-                                user.ConnectionSocket.Close();
+                                serverAccessPermission.UpdateExpert(client);
                                 return;
                             }
-                        
                         default:
                             {
-                                _protocol.sendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
+                                _protocol.SendAnswerFromServer(AnswerFromServer.UnknownCommand, user.ConnectionSocket);
                                 break;
                             }
                     }
@@ -325,15 +423,16 @@ namespace Server
         {
             _protocol = new TCPServerProtocol();
             _connectedUsers = new List<ConnectedUserInfo>();
-            _userViewAndCreatePermission = new DatabaseContext();
+            serverAccessPermission = new DatabaseWrapper();
+            serverAccessPermission.CreateAdmin(new Admin("admin", "admin"));
         }
 
-        public void AcceptConnectionRequests()
+        public void openConnection()
         {
             while (true)
             {
                 ConnectedUserInfo connectedUserInfo = new ConnectedUserInfo();
-                connectedUserInfo.ConnectionSocket = _protocol.acceptConnectionRequest();
+                connectedUserInfo.ConnectionSocket = _protocol.AcceptConnectionRequest();
                 Console.WriteLine("Подключился новый пользователь!");
                 ThreadPool.QueueUserWorkItem(UserHandler, connectedUserInfo);
             }
